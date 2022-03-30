@@ -21,8 +21,9 @@ Pod::Spec.new do |spec|
                                    
   spec.source       = { :git => "https://github.com/bidstack-group/BidstackCustomAdapterIronSource-iOS.git", :tag => "v#{spec.version}" }
   
-  spec.vendored_frameworks = "BidstackMobileAdsSDK.xcframework"
+  spec.vendored_frameworks = "BidstackCustomAdapterIronSource.xcframework"
   
+  spec.dependency 'IronSourceSDK', '~> 7.2.0'
   spec.dependency 'BidstackMobileAdsSDK', '1.0.0'
  	
 end
