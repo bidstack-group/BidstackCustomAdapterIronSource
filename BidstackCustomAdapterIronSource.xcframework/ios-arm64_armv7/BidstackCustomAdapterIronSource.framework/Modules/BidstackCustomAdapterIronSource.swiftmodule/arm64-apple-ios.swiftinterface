@@ -1,0 +1,55 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BidstackCustomAdapterIronSource
+@_exported import BidstackCustomAdapterIronSource
+import BidstackMobileAdsSDK
+import Foundation
+import IronSourceSwift
+import Swift
+import UIKit
+import _Concurrency
+@_inheritsConvenienceInitializers @objc(ISBidstackCustomRewardedVideo) public class ISBidstackCustomRewardedVideo : IronSourceSwift.ISBaseRewardedVideo {
+  @objc override dynamic public func loadAd(with adData: IronSourceSwift.ISAdData, delegate: IronSourceSwift.ISRewardedVideoAdDelegate)
+  @objc override dynamic public func isAdAvailable(with adData: IronSourceSwift.ISAdData) -> Swift.Bool
+  @objc override dynamic public func showAd(with viewController: UIKit.UIViewController, adData: IronSourceSwift.ISAdData, delegate: IronSourceSwift.ISRewardedVideoAdDelegate)
+  @objc override dynamic public init(_ providerConfig: IronSourceSwift.ISAdapterConfig)
+  @objc override dynamic public init(adUnit: IronSourceSwift.ISAdUnit, adapterConfig: IronSourceSwift.ISAdapterConfig)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension BidstackCustomAdapterIronSource.ISBidstackCustomRewardedVideo : BidstackMobileAdsSDK.BidstackVASTPlayerDelegate {
+  @objc dynamic public func adDidLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  @objc dynamic public func adDidClose(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  @objc dynamic public func adDidOpen(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  @objc dynamic public func adDidReward(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  @objc dynamic public func adDidShowSucceed(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  @objc dynamic public func adDidClick(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, clickUrl: Swift.String)
+  @objc dynamic public func adDidFailToLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
+  @objc dynamic public func adDidFailToShow(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
+}
+@_inheritsConvenienceInitializers @objc(ISBidstackCustomAdapter) public class ISBidstackCustomAdapter : IronSourceSwift.ISBaseNetworkAdapter {
+  @objc override dynamic public func `init`(_ adData: IronSourceSwift.ISAdData!, delegate: IronSourceSwift.ISNetworkInitializationDelegate!)
+  @objc override dynamic public func networkSDKVersion() -> Swift.String
+  @objc override dynamic public func adapterVersion() -> Swift.String
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc(ISBidstackCustomInterstitial) public class ISBidstackCustomInterstitial : IronSourceSwift.ISBaseInterstitial {
+  @objc override dynamic public func loadAd(with adData: IronSourceSwift.ISAdData, delegate: IronSourceSwift.ISInterstitialAdDelegate)
+  @objc override dynamic public func isAdAvailable(with adData: IronSourceSwift.ISAdData) -> Swift.Bool
+  @objc override dynamic public func showAd(with viewController: UIKit.UIViewController, adData: IronSourceSwift.ISAdData, delegate: IronSourceSwift.ISInterstitialAdDelegate)
+  @objc override dynamic public init(_ providerConfig: IronSourceSwift.ISAdapterConfig)
+  @objc override dynamic public init(adUnit: IronSourceSwift.ISAdUnit, adapterConfig: IronSourceSwift.ISAdapterConfig)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension BidstackCustomAdapterIronSource.ISBidstackCustomInterstitial : BidstackMobileAdsSDK.BidstackVASTPlayerDelegate {
+  @objc dynamic public func adDidLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  @objc dynamic public func adDidClose(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  @objc dynamic public func adDidOpen(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  @objc dynamic public func adDidShowSucceed(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+  @objc dynamic public func adDidClick(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, clickUrl: Swift.String)
+  @objc dynamic public func adDidFailToLoad(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
+  @objc dynamic public func adDidFailToShow(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer, error: Swift.String)
+  @objc dynamic public func adDidReward(_ player: BidstackMobileAdsSDK.BidstackVASTPlayer)
+}

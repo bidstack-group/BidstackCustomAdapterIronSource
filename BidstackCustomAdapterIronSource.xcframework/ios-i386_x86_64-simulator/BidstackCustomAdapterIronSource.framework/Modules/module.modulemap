@@ -1,0 +1,11 @@
+framework module BidstackCustomAdapterIronSource {
+  umbrella header "BidstackCustomAdapterIronSource.h"
+
+  export *
+  module * { export * }
+}
+
+module BidstackCustomAdapterIronSource.Swift {
+    header "BidstackCustomAdapterIronSource-Swift.h"
+    requires objc
+}
