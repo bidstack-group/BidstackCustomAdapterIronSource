@@ -4,146 +4,86 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/BidstackCustomAdapterIronSource-Swift.h</key>
-		<data>
-		Qa+IjUwvzjKqzEKd+JWxiQrn4JU=
-		</data>
 		<key>Headers/BidstackCustomAdapterIronSource.h</key>
 		<data>
-		NqrjS/60RTTKxeY3CiE0wc4v9io=
+		TmwJ6pJaTxPurIU6iJ5ku64MZxc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vtG0/hN2pEUmU/1uRFtD5udkJQ8=
-		</data>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<data>
-		Ru2c34xwVWvADdcoBSiQui5NoME=
-		</data>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/arm64-apple-ios.swiftinterface</key>
-		<data>
-		829tJ66Cox0KXDocpoB1ChbwqPc=
-		</data>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		aT+eVd5j+FlHQFmBI8W+sGF3Nmw=
-		</data>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<data>
-		wG8u1Ah0AIYaKRM0/yMHhNIto5w=
-		</data>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/armv7-apple-ios.swiftinterface</key>
-		<data>
-		fivum9C/yRqAD+tercXem6KGflA=
-		</data>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<data>
-		3qarmfChKogptRMeIqeoCO+1usE=
+		T+9tRtS+dHcO85FnlSSGPiS6U68=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		OQ94+i+k+qfBTOn90lPhHXJlNrk=
+		xdmUsLRgfqe4SyqLWMJEm2PAbhs=
+		</data>
+		<key>PrivateHeaders/ISBidstackCustomAdapter.h</key>
+		<data>
+		fkyIbmWwalHzKedc+Y1RRjALTN4=
+		</data>
+		<key>PrivateHeaders/ISBidstackCustomInterstitial.h</key>
+		<data>
+		qQM9EgzZ8oWNid5VGzdBE/kkFpU=
+		</data>
+		<key>PrivateHeaders/ISBidstackCustomRewardedVideo.h</key>
+		<data>
+		Xsm8kpuJmy4R0mLmiqZAxUMsDYY=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/BidstackCustomAdapterIronSource-Swift.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Qa+IjUwvzjKqzEKd+JWxiQrn4JU=
-			</data>
-			<key>hash2</key>
-			<data>
-			bp4cGPSG+tzgLFBzvoSunIJS/ZAgGa9eTXnHTayHXMs=
-			</data>
-		</dict>
 		<key>Headers/BidstackCustomAdapterIronSource.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NqrjS/60RTTKxeY3CiE0wc4v9io=
+			TmwJ6pJaTxPurIU6iJ5ku64MZxc=
 			</data>
 			<key>hash2</key>
 			<data>
-			x6S4viomfav6HCA07LylB0t/2rEx+oNY6gzNLJL5XA4=
-			</data>
-		</dict>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Ru2c34xwVWvADdcoBSiQui5NoME=
-			</data>
-			<key>hash2</key>
-			<data>
-			kRLH50VWn9o9Kcvkp97d6sDYfYubUzVZbCu664/H7nc=
-			</data>
-		</dict>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/arm64-apple-ios.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			829tJ66Cox0KXDocpoB1ChbwqPc=
-			</data>
-			<key>hash2</key>
-			<data>
-			GbkNeaGnP5r7kWf/qxMcJyAh6EPX9zXh5AzUCJCRSfk=
-			</data>
-		</dict>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			aT+eVd5j+FlHQFmBI8W+sGF3Nmw=
-			</data>
-			<key>hash2</key>
-			<data>
-			xRFhwxkq2WxEo8PpQPFKRuUk8VkmfsvSBb6k5l9uWPM=
-			</data>
-		</dict>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wG8u1Ah0AIYaKRM0/yMHhNIto5w=
-			</data>
-			<key>hash2</key>
-			<data>
-			Tln2YN5aRzoQpnncAua8vEBX+WaWS3lG8VnavsQCVrU=
-			</data>
-		</dict>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/armv7-apple-ios.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fivum9C/yRqAD+tercXem6KGflA=
-			</data>
-			<key>hash2</key>
-			<data>
-			HZRSVAtl35FLQ/YFRiqk6MaJiGwxqXUb6qWJxmuJoCg=
-			</data>
-		</dict>
-		<key>Modules/BidstackCustomAdapterIronSource.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3qarmfChKogptRMeIqeoCO+1usE=
-			</data>
-			<key>hash2</key>
-			<data>
-			s99TFjGA7Lf7P+V2serIFDBovuf8Q0oc3fG+UmGm4V8=
+			jPLhm0lpBbF2hPhHnJV3pC91lX2US1CCxXZXh+QgZxY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OQ94+i+k+qfBTOn90lPhHXJlNrk=
+			xdmUsLRgfqe4SyqLWMJEm2PAbhs=
 			</data>
 			<key>hash2</key>
 			<data>
-			QMkza+TODPJq2/LB5HDXWEQZeipzHjJ3O3GebSgYOMo=
+			j7+4moknQoEQ/OFqii9XfF53TPqWBQcliP/RG2hLNs0=
+			</data>
+		</dict>
+		<key>PrivateHeaders/ISBidstackCustomAdapter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fkyIbmWwalHzKedc+Y1RRjALTN4=
+			</data>
+			<key>hash2</key>
+			<data>
+			P8+VX+8q9eYIJEju5D1K5xt1BfJpJVZW8w1nUqCQMtY=
+			</data>
+		</dict>
+		<key>PrivateHeaders/ISBidstackCustomInterstitial.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qQM9EgzZ8oWNid5VGzdBE/kkFpU=
+			</data>
+			<key>hash2</key>
+			<data>
+			znAdVsUqmpt/ldWDtSctgsgdWJYDl5O3Uf/51x9a1as=
+			</data>
+		</dict>
+		<key>PrivateHeaders/ISBidstackCustomRewardedVideo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Xsm8kpuJmy4R0mLmiqZAxUMsDYY=
+			</data>
+			<key>hash2</key>
+			<data>
+			jLLyzy4zxqrdEgutA4oAXiBevIh0PusVCVAWKeHz1JE=
 			</data>
 		</dict>
 	</dict>
