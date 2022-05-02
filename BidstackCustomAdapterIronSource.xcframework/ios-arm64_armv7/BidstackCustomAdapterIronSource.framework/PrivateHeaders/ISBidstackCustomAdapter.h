@@ -16,13 +16,3 @@
 - (BidstackAdapterInterface*)bidstackAdapterInterface;
 
 @end
-
-//Hot Bugfix for IS trying to create BidstackCustomAdapter instead of ISBidstackCustomAdapter
-
-@interface  BidstackCustomAdapter : ISBaseNetworkAdapter {
-    
-}
-
-- (BidstackAdapterInterface*)bidstackAdapterInterface;
-
-@end

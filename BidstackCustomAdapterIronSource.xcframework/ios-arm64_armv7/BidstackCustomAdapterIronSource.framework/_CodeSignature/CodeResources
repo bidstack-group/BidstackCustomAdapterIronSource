@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TVkYxXDnOYch2jWxH0v8c36+JDo=
+		dDJVoIUySv35ved+WT6Qcgwpv34=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>PrivateHeaders/ISBidstackCustomAdapter.h</key>
 		<data>
-		fkyIbmWwalHzKedc+Y1RRjALTN4=
+		n2i4s2eK5+27M+Z5LnPVeJDiuOU=
 		</data>
 		<key>PrivateHeaders/ISBidstackCustomInterstitial.h</key>
 		<data>
@@ -57,11 +57,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fkyIbmWwalHzKedc+Y1RRjALTN4=
+			n2i4s2eK5+27M+Z5LnPVeJDiuOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			P8+VX+8q9eYIJEju5D1K5xt1BfJpJVZW8w1nUqCQMtY=
+			nMIjEXy0QgOZqFnPagqWYDD2kIQruzt7WZr4Fg8vHAY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ISBidstackCustomInterstitial.h</key>
