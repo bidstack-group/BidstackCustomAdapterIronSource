@@ -6,9 +6,9 @@ The adapter supports iOS 10 and up and IronSourceSDK 7.2.0, 7.2.1., 7.2.1.1
 
 ## Table of contents
 
-- [Prerequisites](#Prerequisites)
-- [Integration](#Integration)
-- [Supported Versions](#Supported-versions)
+- [Prerequisites](#prerequisites)
+- [Integration](#integration)
+- [Supported Versions](#supported-versions)
 
 ## Prerequisites
 
