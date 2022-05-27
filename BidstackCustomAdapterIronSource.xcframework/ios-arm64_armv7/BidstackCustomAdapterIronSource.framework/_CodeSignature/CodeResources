@@ -10,23 +10,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZYD8CgGyFIdkPH4IIEP1/7eAyio=
+		Z/Cpn9Dr6Aqb4DYXLAOXxqQ636I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		xdmUsLRgfqe4SyqLWMJEm2PAbhs=
 		</data>
-		<key>PrivateHeaders/ISBidstackCustomAdapter.h</key>
+		<key>PrivateHeaders/ISbidstackAdsCustomAdapter.h</key>
 		<data>
-		n2i4s2eK5+27M+Z5LnPVeJDiuOU=
+		+TOCIBmI/QPZx05GTcJlCoKqglY=
 		</data>
-		<key>PrivateHeaders/ISBidstackCustomInterstitial.h</key>
+		<key>PrivateHeaders/ISbidstackAdsCustomInterstitial.h</key>
 		<data>
-		qQM9EgzZ8oWNid5VGzdBE/kkFpU=
+		owph+6XfZEFUurS/xP1Cd+ooFYc=
 		</data>
-		<key>PrivateHeaders/ISBidstackCustomRewardedVideo.h</key>
+		<key>PrivateHeaders/ISbidstackAdsCustomRewardedVideo.h</key>
 		<data>
-		Xsm8kpuJmy4R0mLmiqZAxUMsDYY=
+		gyG/HWbHghFun28k/gX4mT48uxg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -53,37 +53,37 @@
 			j7+4moknQoEQ/OFqii9XfF53TPqWBQcliP/RG2hLNs0=
 			</data>
 		</dict>
-		<key>PrivateHeaders/ISBidstackCustomAdapter.h</key>
+		<key>PrivateHeaders/ISbidstackAdsCustomAdapter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n2i4s2eK5+27M+Z5LnPVeJDiuOU=
+			+TOCIBmI/QPZx05GTcJlCoKqglY=
 			</data>
 			<key>hash2</key>
 			<data>
-			nMIjEXy0QgOZqFnPagqWYDD2kIQruzt7WZr4Fg8vHAY=
+			hJ3DQir3hIwgUGxWNu3i5OthkGp1IWrjBJQerkbFoTA=
 			</data>
 		</dict>
-		<key>PrivateHeaders/ISBidstackCustomInterstitial.h</key>
+		<key>PrivateHeaders/ISbidstackAdsCustomInterstitial.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qQM9EgzZ8oWNid5VGzdBE/kkFpU=
+			owph+6XfZEFUurS/xP1Cd+ooFYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			znAdVsUqmpt/ldWDtSctgsgdWJYDl5O3Uf/51x9a1as=
+			ig1tuc9SqhAj6zbSR2uIczt6bTTvFwPkvIJK3+s3Uro=
 			</data>
 		</dict>
-		<key>PrivateHeaders/ISBidstackCustomRewardedVideo.h</key>
+		<key>PrivateHeaders/ISbidstackAdsCustomRewardedVideo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Xsm8kpuJmy4R0mLmiqZAxUMsDYY=
+			gyG/HWbHghFun28k/gX4mT48uxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			jLLyzy4zxqrdEgutA4oAXiBevIh0PusVCVAWKeHz1JE=
+			SYG8C9yc1cZ0T87N9HLRlCMIUGxGefrFGM1T5CjNt6U=
 			</data>
 		</dict>
 	</dict>

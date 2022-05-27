@@ -10,7 +10,7 @@
 
 @class ISBaseInterstitial;
 
-@interface  ISBidstackCustomInterstitial : ISBaseInterstitial
+@interface  ISbidstackAdsCustomInterstitial : ISBaseInterstitial
 
 @end
 

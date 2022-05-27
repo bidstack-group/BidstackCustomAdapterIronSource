@@ -9,7 +9,7 @@
 
 @class BidstackAdapterInterface;
 
-@interface  ISBidstackCustomAdapter : ISBaseNetworkAdapter {
+@interface  ISbidstackAdsCustomAdapter : ISBaseNetworkAdapter {
     
 }
 
