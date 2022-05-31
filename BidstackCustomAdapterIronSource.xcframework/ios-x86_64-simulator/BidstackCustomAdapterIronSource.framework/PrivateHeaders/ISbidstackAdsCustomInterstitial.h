@@ -8,6 +8,8 @@
 #ifndef ISBidstackCustomInterstitial_h
 #define ISBidstackCustomInterstitial_h
 
+#import <IronSource/IronSource.h>
+
 @class ISBaseInterstitial;
 
 @interface  ISbidstackAdsCustomInterstitial : ISBaseInterstitial

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BidstackCustomAdapterIronSource"
-  spec.version      = "1.3.0"
+  spec.version      = "1.4.0"
   spec.summary      = "Bidstack Custom Adapter for IronSource v7.2.0+"
 
   spec.description  = <<-DESC
@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   spec.author       = { "Alexey Volkov" => "aleksejs.volkovs@bidstack.com" }
-  spec.platform     = :ios, "10.0"
+  spec.platform     = :ios, "11.0"
   spec.swift_version = '5.0'
   
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
@@ -24,6 +24,6 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "BidstackCustomAdapterIronSource.xcframework"
   
   spec.dependency 'IronSourceSDK', '~> 7.2.0'
-  spec.dependency 'BidstackMobileAdsSDK', '~> 1.2.2'
+  spec.dependency 'BidstackMobileAdsSDK', '~> 1.4.1'
  	
 end
