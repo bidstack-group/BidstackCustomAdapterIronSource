@@ -22,8 +22,8 @@ as documented [here](https://developers.is.com/ironsource-mobile/general/custom-
 and integrate the IronSource SDK as documented [here](https://developers.is.com/ironsource-mobile/ios/ios-sdk/).
 
 ##### Configure account settings
-1. When prompted for `Network Key` enter `15ba7b85d`
-2. Once IronSource recognizes the key, you should see `Bidstack` as `Name`
+1. When prompted for `Network Key` enter `15bb61a5d`
+2. Once IronSource recognizes the key, you should see `Bidstack Ads` as `Name`
 3. Your `Publisher Key` is the email address that you signed up to AdConsole with
 
 ##### Configure app
