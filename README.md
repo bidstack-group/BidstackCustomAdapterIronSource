@@ -2,7 +2,7 @@
 
 The Bidstack IronSource Adapter for iOS allows you to display Interstitial and Rewarded ads in your app through IronSource Mediation.
 
-The adapter supports iOS 10 and up and IronSourceSDK 7.2.0, 7.2.1., 7.2.1.1
+The adapter supports iOS 11 and up and IronSourceSDK 7.2.0, 7.2.1., 7.2.1.1, 7.2.1.2, 7.2.2
 
 ## Table of contents
 
@@ -22,8 +22,8 @@ as documented [here](https://developers.is.com/ironsource-mobile/general/custom-
 and integrate the IronSource SDK as documented [here](https://developers.is.com/ironsource-mobile/ios/ios-sdk/).
 
 ##### Configure account settings
-1. When prompted for `Network Key` enter `15ba7b85d`
-2. Once IronSource recognizes the key, you should see `Bidstack` as `Name`
+1. When prompted for `Network Key` enter `15bb61a5d`
+2. Once IronSource recognizes the key, you should see `Bidstack Ads` as `Name`
 3. Your `Publisher Key` is the email address that you signed up to AdConsole with
 
 ##### Configure app
@@ -43,7 +43,7 @@ There are two ways how you can integrate **BidstackCustomAdapterIronSource** int
 ### 1. Using cocoapods
 
 Add to your podfile:
-`pod 'BidstackCustomAdapterIronSource', '~> 1.1.1'`
+`pod 'BidstackCustomAdapterIronSource', '~> 1.4.0'`
 
 That's it! Now you can `pod install` from your Terminal and **BidstackCustomAdapterIronSource** and **BidstackMobileAdsSDK** will be installed automatically. No additional steps needed.
 
@@ -106,6 +106,6 @@ Navigate to the Build Phases tab, disclose the “Link Binary With Libraries” 
 
 ## Supported Versions
 
-Supported **IronSourceSDK** versions: 7.2.0, 7.2.1., 7.2.1.1
+Supported **IronSourceSDK** versions: 7.2.0, 7.2.1., 7.2.1.1, 7.2.1.2, 7.2.2
 
-Supported **iOS** versions: version 10+
+Supported **iOS** versions: version 11+
