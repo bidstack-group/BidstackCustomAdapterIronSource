@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BidstackCustomAdapterIronSource"
-  spec.version      = "1.4.0"
+  spec.version      = "1.4.1"
   spec.summary      = "Bidstack Custom Adapter for IronSource v7.2.0+"
 
   spec.description  = <<-DESC
@@ -24,6 +24,6 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "BidstackCustomAdapterIronSource.xcframework"
   
   spec.dependency 'IronSourceSDK', '~> 7.2.0'
-  spec.dependency 'BidstackMobileAdsSDK', '~> 1.4.1'
+  spec.dependency 'BidstackMobileAdsSDK', '~> 1.4.2'
  	
 end
