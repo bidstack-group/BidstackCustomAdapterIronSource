@@ -25,6 +25,8 @@ and integrate the IronSource SDK as documented [here](https://developers.is.com/
 1. When prompted for `Network Key` enter `15bb61a5d`
 2. Once IronSource recognizes the key, you should see `Bidstack Ads` as `Name`
 3. Your `Publisher Key` is the email address that you signed up to AdConsole with
+4. Your Reporting API key will be provided by Bidstack
+5. For Reported Revenue section - select Rate based revenue due to new instances have no historical data and no eCPM, you should set a rate on the instance until the actual eCPM is populated.
 
 ##### Configure app
 
