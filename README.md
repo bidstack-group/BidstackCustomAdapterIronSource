@@ -37,7 +37,7 @@ and integrate the IronSource SDK as documented [here](https://developers.is.com/
 6. Your `Reporting API key` key will be provided by Bidstack.
 7. For the Reported Revenue section - select Rate-based revenue due to new instances having no historical data and no eCPM, you should set a rate on the instance until the actual eCPM is populated.
 
-<img src="images/custom-adapter-settings.jpg" width="400">
+<img src="images/adapter-settings.jpg" width="400">
 
 #### Configure app
 
@@ -47,11 +47,11 @@ Once you have obtained the credentials, set them up in your IronSource account a
 
 1. In the ironSource dashboard go to **Monetize > Setup > SDK Networks** and scroll down to the `Custom` section. Then press on the pencil icon alongside the Bidstack adapter
 
-<img src="images/ironSource-custom-adapter.jpg" width="700"/>
+<img src="images/ironSource-custom-adapter.png" width="700"/>
 
 2. Here you will need to enter the API key and ad unit ID from the AdConsole. Also, you can manually specify the rate to prioritize Bidstack Ads. To add more than 1 add unit ID select `+Add Network Instance`
 
-<img src="images/adapter-settings.jpg" width="400"/>
+<img src="images/adapter-settings.png" width="400"/>
 
 3. Login into your AdConsole account and add a new game or select existing
 
