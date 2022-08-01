@@ -37,7 +37,7 @@ and integrate the IronSource SDK as documented [here](https://developers.is.com/
 6. Your `Reporting API key` key will be provided by Bidstack.
 7. For the Reported Revenue section - select Rate-based revenue due to new instances having no historical data and no eCPM, you should set a rate on the instance until the actual eCPM is populated.
 
-<img src="images/adapter-settings.jpg" width="400">
+<img src="images/custom-adapter-settings.jpg" width="400">
 
 #### Configure app
 
