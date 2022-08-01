@@ -2,37 +2,69 @@
 
 The Bidstack IronSource Adapter for iOS allows you to display Interstitial and Rewarded ads in your app through IronSource Mediation.
 
-The adapter supports iOS 11 and up and IronSourceSDK 7.2.0, 7.2.1., 7.2.1.1, 7.2.1.2, 7.2.2
-
 ## Table of contents
 
 - [Prerequisites](#prerequisites)
 - [Integration](#integration)
-- [Supported Versions](#supported-versions)
+- [Supported versions](#supported-versions)
 
 ## Prerequisites
 
 **Required:** iOS version 10+
 
-**Required:** If you're planning to integrate adapter manually, then you need to download **BidstackCustomAdapterIronSource.xcframework** and **BidstackMobileAdsSDK.xcframework** provided by Bidstack.
-
+**Required:** If you're planning to integrate adapter manually, then you need to download **BidstackCustomAdapterIronSource.xcframework** and **BidstackMobileAdsSDK.xcframework** from [here](https://console.bidstack.com/developer/downloads). (Look for IronSource Mediation Adapter -> iOS)
 
 Before integrating the adapter you will need to set up the Bidstack network on your IronSource account
-as documented [here](https://developers.is.com/ironsource-mobile/general/custom-adapter-setup/)
+as documented [here](https://developers.is.com/ironsource-mobile/general/custom-adapter-setup/) or follow the instructions in the header [Configure the ad network account settings](#configure-the-ad-network-account-settings)
 and integrate the IronSource SDK as documented [here](https://developers.is.com/ironsource-mobile/ios/ios-sdk/).
 
-##### Configure account settings
-1. When prompted for `Network Key` enter `15bb61a5d`
-2. Once IronSource recognizes the key, you should see `Bidstack Ads` as `Name`
-3. Your `Publisher Key` is the email address that you signed up to AdConsole with
-4. Your Reporting API key will be provided by Bidstack
-5. For Reported Revenue section - select Rate based revenue due to new instances have no historical data and no eCPM, you should set a rate on the instance until the actual eCPM is populated.
+#### Configure the ad network account settings
 
-##### Configure app
+1. Log in to your ironSource account and go to **Monetize > Setup > SDK Networks** and click `Manage Networks`
+
+<img src="images/manage-networks.jpg" width="700"/>
+
+2. Select Custom Adapter at the end of the list
+
+<img src="images/custom-adapter-selecting.jpg" width="700"/>
+
+3. When prompted for `Network Key` enter `15bb61a5d`
+
+<img src="images/network-key-entering.jpg" width="400"/>
+
+4. Once IronSource recognizes the key, you should see `Bidstack Ads` as `Name`.
+5. Your `Publisher ID` is the email address that you signed up to the AdConsole with.
+6. Your `Reporting API key` key will be provided by Bidstack.
+7. For the Reported Revenue section - select Rate-based revenue due to new instances having no historical data and no eCPM, you should set a rate on the instance until the actual eCPM is populated.
+
+<img src="images/custom-adapter-settings.jpg" width="400">
+
+#### Configure app
 
 You will need to gather API key and ad unit ID's which can be obtained in [AdConsole](https://console.bidstack.com/auth/login).
 Once you have obtained the credentials, set them up in your IronSource account as documented
 [here](https://developers.is.com/ironsource-mobile/general/custom-adapter-setup/#step-3).
+
+1. In the ironSource dashboard go to **Monetize > Setup > SDK Networks** and scroll down to the `Custom` section. Then press on the pencil icon alongside the Bidstack adapter
+
+<img src="images/ironSource-custom-adapter.jpg" width="700"/>
+
+2. Here you will need to enter the API key and ad unit ID from the AdConsole. Also, you can manually specify the rate to prioritize Bidstack Ads. To add more than 1 add unit ID select `+Add Network Instance`
+
+<img src="images/adapter-settings.jpg" width="400"/>
+
+3. Login into your AdConsole account and add a new game or select existing
+
+<img src="images/selecting-game.jpg" width="700"/>
+
+4. From the navigation menu select `SDK control panel` and copy the API key. Paste this API key in the IronSource dashboard
+
+<img src="images/adConsole-api-key.jpg" width="700"/>
+
+5. From the navigation menu select `Ad units`. And then create and copy ad unit id. Also, paste the ad unit id in the IronSource dashboard
+
+<img src="images/adConsole-adUnit-id.jpg" width="700"/>
+
 
 When prompted for `App Settings`:
 1. `Application Key` is the API key you retrieved from AdConsole
@@ -45,7 +77,7 @@ There are two ways how you can integrate **BidstackCustomAdapterIronSource** int
 ### 1. Using cocoapods
 
 Add to your podfile:
-`pod 'BidstackCustomAdapterIronSource', '~> 1.4.0'`
+`pod 'BidstackCustomAdapterIronSource', '~> 1.5.0'`
 
 That's it! Now you can `pod install` from your Terminal and **BidstackCustomAdapterIronSource** and **BidstackMobileAdsSDK** will be installed automatically. No additional steps needed.
 
@@ -106,8 +138,8 @@ Navigate to the Build Phases tab, disclose the “Link Binary With Libraries” 
 ### The **BidstackIronSourceAdapter.xcframework** and **BidstackMobileAdsSDK.xcframework** is now fully added and integrated with your Xcode project. No additional setup is needed.
 
 
-## Supported Versions
+## Supported versions
 
-Supported **IronSourceSDK** versions: 7.2.0, 7.2.1., 7.2.1.1, 7.2.1.2, 7.2.2
+Supported **IronSourceSDK** versions: 7.2.0 and up
 
-Supported **iOS** versions: version 11+
+Supported **iOS** versions: version 10+
