@@ -20,7 +20,7 @@ and integrate the IronSource SDK as documented [here](https://developers.is.com/
 
 #### Configure the ad network account settings
 
-1. Log in to your ironSource account and go to **Monetize > Setup > SDK Networks** and click `Manage Networks`
+1. Log in to your IronSource account and go to **Monetize > Setup > SDK Networks** and click `Manage Networks`
 
 <img src="images/manage-networks.jpg" width="700"/>
 
