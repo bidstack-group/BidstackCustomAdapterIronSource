@@ -77,7 +77,7 @@ There are two ways how you can integrate **BidstackCustomAdapterIronSource** int
 ### 1. Using cocoapods
 
 Add to your podfile:
-`pod 'BidstackCustomAdapterIronSource', '~> 1.5.0'`
+`pod 'BidstackCustomAdapterIronSource', '~> 1.7.0'`
 
 That's it! Now you can `pod install` from your Terminal and **BidstackCustomAdapterIronSource** and **BidstackMobileAdsSDK** will be installed automatically. No additional steps needed.
 
@@ -95,15 +95,13 @@ Right click on your project in the project navigator (top-most entry) and select
 <img src="images/bcad-2.png" width="400"> <img src="images/bcad-3.png" width="400">
 
 
-#### 2. Add BidstackIronSourceAdapter.xcframework and BidstackMobileAdsSDK.xcframework to Frameworks folder
+#### 2. Add **BidstackIronSourceAdapter.xcframework**, **BidstackMobileAdsSDK.xcframework** and **OMSDK_Bidstack.xcframework** to Frameworks folder
 
-There are two ways how to add an BidstackIronSourceAdapter.xcframework and BidstackMobileAdsSDK.xcframework to the Frameworks folder. 
+There are two ways how to add all frameworks to the Frameworks folder. 
 
-##### 1. Drag and drop both frameworks from Finder into the **Frameworks** folder. Make sure that the destination of drag is just under the Frameworks folder:
+##### 1. Drag and drop frameworks from Finder into the **Frameworks** folder. Make sure that the destination of drag is just under the Frameworks folder:
 
-<img src="images/bcad-4.png" width="600">
-
-<img src="images/bcad-5.png" width="600">
+<img src="images/drop-frameworks.png" width="700">
 
 Then, make sure the following options are selected for adding files. Both “Copy items if needed” and “Create groups” should be checked and selected. Click Finish.
 
@@ -114,7 +112,7 @@ Then, make sure the following options are selected for adding files. Both “Cop
 
 <img src="images/bcad-7.png" width="400">
 
-Find the  BidstackIronSourceAdapter.xcframework and BidstackMobileAdsSDK.xcframework in the file navigator, select it, make sure “Copy items if needed” and “Create groups” are selected and click `Add`:
+Find the  BidstackIronSourceAdapter.xcframework, BidstackMobileAdsSDK.xcframework and OMSDK_Bidstack.xcframework in the file navigator, select it, make sure “Copy items if needed” and “Create groups” are selected and click `Add`:
 
 <img src="images/bcad-8.png" width="700">
 
@@ -124,12 +122,12 @@ In order to make sure that the framework will get copied to your app’s binary,
 
 1. Navigate to your project settings by clicking on it in the project navigator. 
 2. Make sure that your target is selected and General tab is open.
-3. Select `Embed & Sign` for your newly added **BidstackMobileAdsSDK.xcframework**.
+3. Select `Embed & Sign` for your newly added **BidstackMobileAdsSDK.xcframework** and **OMSDK_Bidstack.xcframework**.
 4. Make sure that **BidstackIronSourceAdapter.xcframework** has `Do Not Embed` selected.
 
 ![](images/bcad-9.png)
 
-#### 4. Link BidstackIronSourceAdapter.xcframework and BidstackMobileAdsSDK.xcframework with your project
+#### 4. Link BidstackIronSourceAdapter.xcframework, BidstackMobileAdsSDK.xcframework and OMSDK_Bidstack.xcframework with your project
 
 Navigate to the Build Phases tab, disclose the “Link Binary With Libraries” list and make sure your frameworks is included in the list. It should already be included by default after following the steps above, however in case it’s not – click on the + button and add it.
 
