@@ -13,6 +13,4 @@
     
 }
 
-- (BidstackAdapterInterface*)bidstackAdapterInterface;
-
 @end

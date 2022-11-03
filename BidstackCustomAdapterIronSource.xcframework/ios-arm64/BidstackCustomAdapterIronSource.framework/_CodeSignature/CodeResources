@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kJwNMVX8ad/b8Jg8Z+FEmiWd9pY=
+		ubDof3o4t8VmtoUeX3fEWNH3BI0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>PrivateHeaders/ISbidstackAdsCustomAdapter.h</key>
 		<data>
-		+TOCIBmI/QPZx05GTcJlCoKqglY=
+		G7rDHTA2OsgRfQIwMxsp/ulfwQs=
 		</data>
 		<key>PrivateHeaders/ISbidstackAdsCustomInterstitial.h</key>
 		<data>
@@ -57,11 +57,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+TOCIBmI/QPZx05GTcJlCoKqglY=
+			G7rDHTA2OsgRfQIwMxsp/ulfwQs=
 			</data>
 			<key>hash2</key>
 			<data>
-			hJ3DQir3hIwgUGxWNu3i5OthkGp1IWrjBJQerkbFoTA=
+			QIPppPHHLiBCLBn6bCYcIItF6c3cWNwCagAE4bkBJCY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ISbidstackAdsCustomInterstitial.h</key>
