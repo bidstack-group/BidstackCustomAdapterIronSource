@@ -10,7 +10,7 @@ The Bidstack IronSource Adapter for iOS allows you to display Interstitial and R
 
 ## Prerequisites
 
-**Required:** iOS version 10+
+**Required:** iOS version 11+
 
 **Required:** If you're planning to integrate adapter manually, then you need to download **BidstackCustomAdapterIronSource.xcframework** and **BidstackMobileAdsSDK.xcframework** from [here](https://console.bidstack.com/developer/downloads). (Look for IronSource Mediation Adapter -> iOS)
 
@@ -140,4 +140,4 @@ Navigate to the Build Phases tab, disclose the “Link Binary With Libraries” 
 
 Supported **IronSourceSDK** versions: 7.2.0 and up
 
-Supported **iOS** versions: version 10+
+Supported **iOS** versions: version 11+
