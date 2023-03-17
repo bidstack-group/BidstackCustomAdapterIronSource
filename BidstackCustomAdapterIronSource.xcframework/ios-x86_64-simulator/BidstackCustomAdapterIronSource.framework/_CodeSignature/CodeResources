@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NYW+MWuY8CYla272hMOPIvGLAXA=
+		nGu/e88W/a95PhkuVc9SqVViIYA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>PrivateHeaders/ISbidstackAdsCustomAdapter.h</key>
 		<data>
-		G7rDHTA2OsgRfQIwMxsp/ulfwQs=
+		TBNcv8VTB7t2JorZQZPMf3K8F9o=
 		</data>
 		<key>PrivateHeaders/ISbidstackAdsCustomInterstitial.h</key>
 		<data>
-		CvXj7h4nwNjx5DDYSH7A/jqVVaQ=
+		xA1qrUWxNCYSAx3eg2aIumwFz/U=
 		</data>
 		<key>PrivateHeaders/ISbidstackAdsCustomRewardedVideo.h</key>
 		<data>
-		gyG/HWbHghFun28k/gX4mT48uxg=
+		2epmZu49jP/5dlMCfTzQau1I/PI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -57,33 +57,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G7rDHTA2OsgRfQIwMxsp/ulfwQs=
+			TBNcv8VTB7t2JorZQZPMf3K8F9o=
 			</data>
 			<key>hash2</key>
 			<data>
-			QIPppPHHLiBCLBn6bCYcIItF6c3cWNwCagAE4bkBJCY=
+			fp83/g/CycqAmSn5zG0BV7x4GHRPw+JZzv3EdFvmPjw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ISbidstackAdsCustomInterstitial.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CvXj7h4nwNjx5DDYSH7A/jqVVaQ=
+			xA1qrUWxNCYSAx3eg2aIumwFz/U=
 			</data>
 			<key>hash2</key>
 			<data>
-			16c2FvciBJf1HF9BSP+XFud7DoFtWtdnM3XZoa4z2W0=
+			Wa9UcliRgpyww53drQJJzf3Sei7t73FwdX8xuSorYGM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ISbidstackAdsCustomRewardedVideo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gyG/HWbHghFun28k/gX4mT48uxg=
+			2epmZu49jP/5dlMCfTzQau1I/PI=
 			</data>
 			<key>hash2</key>
 			<data>
-			SYG8C9yc1cZ0T87N9HLRlCMIUGxGefrFGM1T5CjNt6U=
+			ZMSKweWel9axJEGg6mh0/r0uh+3rmEk9PK4n9XnWR/8=
 			</data>
 		</dict>
 	</dict>

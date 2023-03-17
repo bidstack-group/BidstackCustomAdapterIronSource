@@ -5,8 +5,8 @@
 //  Created by Aleksejs Volkovs on 11/03/2022.
 //
 
-#ifndef ISBidstackCustomInterstitial_h
-#define ISBidstackCustomInterstitial_h
+#ifndef ISbidstackAdsCustomInterstitial_h
+#define ISbidstackAdsCustomInterstitial_h
 
 #import <IronSource/IronSource.h>
 
@@ -17,4 +17,4 @@
 @end
 
 
-#endif /* ISBidstackCustomInterstitial_h */
+#endif
