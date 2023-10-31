@@ -1,143 +1,157 @@
-# Bidstack Adapter IronSource iOS installation guide
+# Bidstack IronSource Adapter Installation Guide for iOS
 
 The Bidstack IronSource Adapter for iOS allows you to display Interstitial and Rewarded ads in your app through IronSource Mediation.
 
 ## Table of contents
 
-- [Prerequisites](#prerequisites)
-- [Integration](#integration)
-- [Supported versions](#supported-versions)
+* [Prerequisites](#prerequisites)
+   * [Configuring adapter in the IronSource dashboard](#configuring-adapter-in-the-ironsource-dashboard)
+   * [Configuring ad units](#configuring-ad-units)
+* [Integration](#integration)
+   * [Using CocoaPods](#using-cocoapods)
+   * [Adding xcframeworks manually](#adding-xcframeworks-manually)
+* [Privacy](#privacy)
+* [Supported versions](#supported-versions)
 
 ## Prerequisites
 
-**Required:** iOS version 11+
+**Required:** iOS version 12+
 
-**Required:** If you're planning to integrate adapter manually, then you need to download **BidstackCustomAdapterIronSource.xcframework** and **BidstackMobileAdsSDK.xcframework** from [here](https://console.bidstack.com/developer/downloads). (Look for IronSource Mediation Adapter -> iOS)
+**Required:** If you're planning to integrate the adapter manually, then you need to [download](https://console.bidstack.com/developer/downloads) **BidstackCustomAdapterIronSource.xcframework**, **BidstackMobileAdsSDK.xcframework** and **BidstackMobileAdsSDKResources.bundle** provided by Bidstack.
 
-Before integrating the adapter you will need to set up the Bidstack network on your IronSource account
-as documented [here](https://developers.is.com/ironsource-mobile/general/custom-adapter-setup/) or follow the instructions in the header [Configure the ad network account settings](#configure-the-ad-network-account-settings)
-and integrate the IronSource SDK as documented [here](https://developers.is.com/ironsource-mobile/ios/ios-sdk/).
+Before integrating the adapter, you will need to set up the Bidstack network in your IronSource account as documented [here](https://developers.is.com/ironsource-mobile/general/custom-adapter-setup/) or follow the instructions in the section [Configure the ad network account settings](#configuring-adapter-in-the-ironsource-dashboard) and integrate the IronSource SDK as documented [here](https://developers.is.com/ironsource-mobile/ios/ios-sdk/).
+<div class="page-break"></div>
 
-#### Configure the ad network account settings
+### Configuring adapter in the IronSource dashboard
 
-1. Log in to your IronSource account and go to **Monetize > Setup > SDK Networks** and click `Manage Networks`
+1. Log in to your IronSource account, go to **Monetize > Setup > SDK Networks** and click **Manage Networks**
 
-<img src="images/manage-networks.jpg" width="700"/>
+    <img src="images/manage-networks.jpg" width="600"/>
 
 2. Select Custom Adapter at the end of the list
 
-<img src="images/custom-adapter-selecting.jpg" width="700"/>
+    <img src="images/custom-adapter-selecting.jpg" width="600"/>
+    <div class="page-break"></div>
 
-3. When prompted for `Network Key` enter `15bb61a5d`
+3. When prompted for **Network Key**, enter **15bb61a5d**
 
-<img src="images/network-key-entering.jpg" width="400"/>
+    <img src="images/network-key-entering.jpg" width="500"/>
 
-4. Once IronSource recognizes the key, you should see `Bidstack Ads` as `Name`.
-5. Your `Publisher ID` is the email address that you signed up to the AdConsole with.
-6. Your `Reporting API key` key will be provided by Bidstack.
+4. Once IronSource recognizes the key, you should see **Bidstack Ads** as **Name**
+5. Your **Publisher Key** is the email address that you signed up to AdConsole with
+6. Your **Reporting API key** will be provided by Bidstack
 7. For the Reported Revenue section - select Rate-based revenue due to new instances having no historical data and no eCPM, you should set a rate on the instance until the actual eCPM is populated.
 
-<img src="images/custom-adapter-settings.jpg" width="400">
+    <img src="images/custom-adapter-settings.jpg" width="400"/>
+    <div class="page-break"></div>
 
-#### Configure app
+### Configuring ad units
 
-You will need to gather API key and ad unit ID's which can be obtained in [AdConsole](https://console.bidstack.com/auth/login).
-Once you have obtained the credentials, set them up in your IronSource account as documented
-[here](https://developers.is.com/ironsource-mobile/general/custom-adapter-setup/#step-3).
+You will need to gather API key and ad unit IDs, which can be obtained in [AdConsole](https://console.bidstack.com/auth/login).
+Once you have obtained the credentials, set them up in your IronSource account as documented [here](https://developers.is.com/ironsource-mobile/general/custom-adapter-setup/#step-3).
 
-1. In the ironSource dashboard go to **Monetize > Setup > SDK Networks** and scroll down to the `Custom` section. Then press on the pencil icon alongside the Bidstack adapter
+1. In the IronSource dashboard, go to **Monetize > Setup > SDK Networks** and scroll down to the **Custom** section. Then press on the pencil icon alongside the Bidstack adapter
 
-<img src="images/ironSource-custom-adapter.png" width="700"/>
+    <img src="images/ironSource-custom-adapter.jpg" width="550"/>
 
-2. Here you will need to enter the API key and ad unit ID from the AdConsole. Also, you can manually specify the rate to prioritize Bidstack Ads. To add more than 1 add unit ID select `+Add Network Instance`
+2. Here you will need to enter the API key and ad unit name from the AdConsole. Also, you can manually specify the rate to prioritize Bidstack Ads. To add more than 1 ad unit ID select **+Add Network Instance**
 
-<img src="images/adapter-settings.png" width="400"/>
+    <img src="images/ironSource-adapter-settings.jpg" width="350"/>
+    <div class="page-break"></div>
 
 3. Login into your AdConsole account and add a new game or select existing
 
-<img src="images/selecting-game.jpg" width="700"/>
+    <img src="images/selecting-game.jpg" width="600"/>
 
-4. From the navigation menu select `SDK control panel` and copy the API key. Paste this API key in the IronSource dashboard
+4. From the navigation menu, select **SDK control panel** and copy the API key. Paste this API key in the IronSource dashboard field **API key**
 
-<img src="images/adConsole-api-key.jpg" width="700"/>
+    <img src="images/adConsole-api-key.jpg" width="600"/>
 
-5. From the navigation menu select `Ad units`. And then create and copy ad unit id. Also, paste the ad unit id in the IronSource dashboard
+5. From the navigation menu, select **Ad units**. And then create and copy the ad unit name. Also, paste the ad unit name in the IronSource dashboard filed **Ad unit ID**
 
-<img src="images/adConsole-adUnit-id.jpg" width="700"/>
-
-
-When prompted for `App Settings`:
-1. `Application Key` is the API key you retrieved from AdConsole
-2. `Placement Id` is `Ad unit ID` you retrieved from AdConsole
+    <img src="images/adConsole-adUnit-id.jpg" width="600"/>
+    <div class="page-break"></div>
 
 ## Integration
 
-There are two ways how you can integrate **BidstackCustomAdapterIronSource** into your project - using cocoapods or adding xcframeworks manually. 
+There are two ways you can integrate **BidstackCustomAdapterIronSource** into your project - using CocoaPods or adding xcframeworks manually.
 
-### 1. Using cocoapods
+### Using CocoaPods
 
 Add to your podfile:
-`pod 'BidstackCustomAdapterIronSource', '~> 1.9.0'`
+`pod 'BidstackCustomAdapterIronSource', '~> 2.2.0'`
 
-That's it! Now you can `pod install` from your Terminal and **BidstackCustomAdapterIronSource** and **BidstackMobileAdsSDK** will be installed automatically. No additional steps needed.
+That's it! Now you can `pod install` from your Terminal and **BidstackCustomAdapterIronSource** and **BidstackMobileAdsSDK** will be installed automatically. No additional steps are needed.
 
-
-### 2. Add xcframeworks manually
+### Adding xcframeworks manually
 
 #### 1. Create **Frameworks** folder
 
-First of all, double check if your Xcode project contains a **Frameworks** folder in project navigator. If it doesn’t, just like in the screenshot below, then we’ll have to create one. The Frameworks folder is not added by default in latest Xcode and it’s a good practice to keep your frameworks there.
+Firstly, double-check if your Xcode project contains a **Frameworks** folder in the project navigator. If it doesn’t, just like in the screenshot below, then you’ll have to create one. The Frameworks folder is not added by default in the latest Xcode, and it’s a good practice to keep your frameworks there.
 
-<img src="images/bcad-1.png" width="400">
+<img src="images/bcad-1.jpg" width="200"/>
 
-Right click on your project in the project navigator (top-most entry) and select “New Group”. Name the new group **Frameworks**.
+Right-click on your project in the project navigator (top-most entry) and select **New Group**. Name the new group **Frameworks**.
 
-<img src="images/bcad-2.png" width="400"> <img src="images/bcad-3.png" width="400">
+<img src="images/bcad-2.jpg" width="200"/>
+<img src="images/bcad-3.jpg" width="200"/>
+<div class="page-break"></div>
 
+#### 2. Add BidstackCustomAdapterIronSource.xcframework, BidstackMobileAdsSDK.xcframework, and BidstackMobileAdsSDKResources.bundle to the Frameworks folder
 
-#### 2. Add **BidstackIronSourceAdapter.xcframework**, **BidstackMobileAdsSDK.xcframework** and **OMSDK_Bidstack.xcframework** to Frameworks folder
+With the **Frameworks** folder selected, click on **File -> Add Files** to “Your Project”
 
-There are two ways how to add all frameworks to the Frameworks folder. 
+<img src="images/bcad-4.jpg" width="200"/>
 
-##### 1. Drag and drop frameworks from Finder into the **Frameworks** folder. Make sure that the destination of drag is just under the Frameworks folder:
+Find the **BidstackCustomAdapterIronSource.xcframework**, **BidstackMobileAdsSDK.xcframework**, and **BidstackMobileAdsSDKResources.bundle** in the file navigator, select it, make sure “Copy items if needed” and “Create groups” are selected, and click **Add**:
 
-<img src="images/drop-frameworks.png" width="700">
+<img src="images/bcad-5.jpg" width="500"/>
+<div class="page-break"></div>
 
-Then, make sure the following options are selected for adding files. Both “Copy items if needed” and “Create groups” should be checked and selected. Click Finish.
+#### 3. Verify that frameworks were added correctly by following these steps:
 
-<img src="images/bcad-6.png" width="500">
+1. Navigate to your project settings by clicking on it in the project navigator.
+2. Select your target and open the **General** tab.
+3. Make sure that **BidstackCustomAdapterIronSource.xcframework** and **BidstackMobileAdsSDK.xcframework** have **Do Not Embed** selected.
 
+    <img src="images/bcad-6.jpg" width="600"/>
+    <div class="page-break"></div>
 
-##### 2. Alternatively, with the Frameworks folder selected, click on File -> Add Files to “Your Project”
+4. Navigate to the **Build Phases** tab and open the **Copy Bundle Resources** section
+5. Assure that **BidstackMobileAdsSDKResources.bundle** is added
 
-<img src="images/bcad-7.png" width="400">
+    <img src="images/bcad-7.jpg" width="600"/>
 
-Find the  BidstackIronSourceAdapter.xcframework, BidstackMobileAdsSDK.xcframework and OMSDK_Bidstack.xcframework in the file navigator, select it, make sure “Copy items if needed” and “Create groups” are selected and click `Add`:
+The **BidstackCustomAdapterIronSource.xcframework** and **BidstackMobileAdsSDK.xcframework** are now fully added and integrated with your Xcode project. No additional setup is needed
 
-<img src="images/bcad-8.png" width="700">
+<div class="page-break"></div>
 
-#### 3. Embed BidstackMobileAdsSDK.xcframework in project’s target
+## Privacy
 
-In order to make sure that the framework will get copied to your app’s binary, follow these steps:
+Bidstack provides APIs for passing privacy flags. Note that nothing in this document should be considered as legal advice.
+If the user provided consent, set the following flag to `true`:
 
-1. Navigate to your project settings by clicking on it in the project navigator. 
-2. Make sure that your target is selected and General tab is open.
-3. Select `Embed & Sign` for your newly added **BidstackMobileAdsSDK.xcframework** and **OMSDK_Bidstack.xcframework**.
-4. Make sure that **BidstackIronSourceAdapter.xcframework** has `Do Not Embed` selected.
+* Objective-C:
+    ```objectivec
+    [BidstackMobileAds setHasConsent: YES];
+    ```
+* Swift
+    ```swift
+    BidstackMobileAds.setHasConsent(true)
+    ```
 
-![](images/bcad-9.png)
+If the user is a child, set the following flag to `true`:
 
-#### 4. Link BidstackIronSourceAdapter.xcframework, BidstackMobileAdsSDK.xcframework and OMSDK_Bidstack.xcframework with your project
+* Objective-C:
+    ```objectivec
+    [BidstackMobileAds setIsChildDirected: YES];
+    ```
+* Swift
+    ```swift
+    BidstackMobileAds.setIsChildDirected(true)
+    ```
 
-Navigate to the Build Phases tab, disclose the “Link Binary With Libraries” list and make sure your frameworks is included in the list. It should already be included by default after following the steps above, however in case it’s not – click on the + button and add it.
+## Supported Versions
 
-![](images/bcad-10.png)
-
-### The **BidstackIronSourceAdapter.xcframework** and **BidstackMobileAdsSDK.xcframework** is now fully added and integrated with your Xcode project. No additional setup is needed.
-
-
-## Supported versions
-
-Supported **IronSourceSDK** versions: 7.2.0 and up
-
-Supported **iOS** versions: version 11+
+* iOS 12 and up
+* IronSourceSDK 7.3.0 and up
