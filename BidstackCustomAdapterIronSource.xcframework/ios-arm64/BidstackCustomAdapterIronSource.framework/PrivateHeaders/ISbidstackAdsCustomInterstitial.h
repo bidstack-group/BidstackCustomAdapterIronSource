@@ -12,7 +12,7 @@
 
 @class ISBaseInterstitial;
 
-@interface  ISbidstackAdsCustomInterstitial : ISBaseInterstitial
+@interface  ISbidstackAdsCustomInterstitial : ISBaseInterstitial <BidstackInterstitialAdDelegate>
 
 @end
 

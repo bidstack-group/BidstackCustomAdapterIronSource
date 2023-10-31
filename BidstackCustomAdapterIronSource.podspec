@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "BidstackCustomAdapterIronSource"
-  spec.version      = "1.9.1"
-  spec.summary      = "Bidstack Custom Adapter for IronSource v7.2.0+"
+  spec.version      = "2.2.0"
+  spec.summary      = "Bidstack Custom Adapter for IronSource v7.3.0+"
 
   spec.description  = <<-DESC
 			  The Bidstack IronSource Adapter for iOS allows you to display Interstitial and Rewarded ads in your app through IronSource.
@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.preserve_path = "README.md"
 
   spec.author       = "Bidstack Limited"
-  spec.platform     = :ios, "11.0"
+  spec.platform     = :ios, "12.0"
   spec.swift_version = '5.0'
   
   spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphoneos*]' => 'arm64', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   
   spec.vendored_frameworks = "BidstackCustomAdapterIronSource.xcframework"
   
-  spec.dependency 'IronSourceSDK', '~> 7.3'
-  spec.dependency 'BidstackMobileAdsSDK', '~> 1.9.1'
+  spec.dependency 'IronSourceSDK', '~> 7.5'
+  spec.dependency 'BidstackMobileAdsSDK', '~> 2.2.0'
  	
 end

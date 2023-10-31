@@ -12,7 +12,7 @@
 
 @class ISBaseRewardedVideo;
 
-@interface  ISbidstackAdsCustomRewardedVideo : ISBaseRewardedVideo
+@interface  ISbidstackAdsCustomRewardedVideo : ISBaseRewardedVideo <BidstackRewardedAdDelegate>
 
 @end
 

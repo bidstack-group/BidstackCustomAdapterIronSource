@@ -1,6 +1,6 @@
 framework module BidstackCustomAdapterIronSource {
   umbrella header "BidstackCustomAdapterIronSource.h"
-
   export *
+
   module * { export * }
 }
