@@ -79,7 +79,7 @@ There are two ways you can integrate **BidstackCustomAdapterIronSource** into yo
 ### Using CocoaPods
 
 Add to your podfile:
-`pod 'BidstackCustomAdapterIronSource', '~> 2.3.0'`
+`pod 'BidstackCustomAdapterIronSource', '~> 2.3.2'`
 
 That's it! Now you can `pod install` from your Terminal and **BidstackCustomAdapterIronSource** and **BidstackMobileAdsSDK** will be installed automatically. No additional steps are needed.
 
